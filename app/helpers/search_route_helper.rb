@@ -1,0 +1,2 @@
+module SearchRouteHelper
+end

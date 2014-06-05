@@ -1,0 +1,14 @@
+<h1>SearchRoute#new</h1>
+<p>Find me in app/views/search_route/new.html.erb</p>
+
+<div>
+  <%= form_for @search_route, url: '/', method: :post do |f| %>
+    <%= f.fields_for :stations do |c| %>
+      <%= c.text_field :name %>
+    <% end %>
+
+    <p>
+      <%= f.submit "Submit" %>
+    </p>
+  <% end %>
+</div>
